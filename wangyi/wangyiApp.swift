@@ -1,14 +1,14 @@
 //
-//  testApp.swift
-//  test
+//  wangyiApp.swift
+//  wangyi
 //
-//  Created by 冷酷的小胖 on 2024/3/4.
+//  Created by haoyu wang on 2024/2/20.
 //
 
 import SwiftUI
 
 @main
-struct testApp: App {
+struct wangyiApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
