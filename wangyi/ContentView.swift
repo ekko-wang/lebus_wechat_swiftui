@@ -14,7 +14,7 @@ struct ContentView: View {
             let message = Message(
                 imgName: "head",
                 nickName: "老马\(i)",
-                messageText: "今天星期几23",
+                messageText: "今天星期几234",
                 messageDate: "2024-02-18"
             )
             messages.append(message)
