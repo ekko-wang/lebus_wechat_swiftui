@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		306292B32B843C7F0048271C /* wangyiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306292B22B843C7F0048271C /* wangyiApp.swift */; };
-		306292B52B843C7F0048271C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306292B42B843C7F0048271C /* ContentView.swift */; };
+		306292B52B843C7F0048271C /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306292B42B843C7F0048271C /* MessageList.swift */; };
 		306292B72B843C820048271C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306292B62B843C820048271C /* Assets.xcassets */; };
 		306292BA2B843C820048271C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306292B92B843C820048271C /* Preview Assets.xcassets */; };
 		30E15BD72B8DBC7000E4148E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E15BD62B8DBC7000E4148E /* Message.swift */; };
+		30E15BD92BA1449B00E4148E /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E15BD82BA1449B00E4148E /* MessageRow.swift */; };
+		30E15BDB2BA2D1C300E4148E /* MessageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E15BDA2BA2D1C300E4148E /* MessageDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		306292AF2B843C7F0048271C /* wangyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wangyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306292B22B843C7F0048271C /* wangyiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wangyiApp.swift; sourceTree = "<group>"; };
-		306292B42B843C7F0048271C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		306292B42B843C7F0048271C /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
 		306292B62B843C820048271C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		306292B92B843C820048271C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30E15BD62B8DBC7000E4148E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		30E15BD82BA1449B00E4148E /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		30E15BDA2BA2D1C300E4148E /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				306292B22B843C7F0048271C /* wangyiApp.swift */,
 				30E15BD62B8DBC7000E4148E /* Message.swift */,
-				306292B42B843C7F0048271C /* ContentView.swift */,
+				306292B42B843C7F0048271C /* MessageList.swift */,
+				30E15BDA2BA2D1C300E4148E /* MessageDetail.swift */,
+				30E15BD82BA1449B00E4148E /* MessageRow.swift */,
 				306292B62B843C820048271C /* Assets.xcassets */,
 				306292B82B843C820048271C /* Preview Content */,
 			);
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E15BDB2BA2D1C300E4148E /* MessageDetail.swift in Sources */,
+				30E15BD92BA1449B00E4148E /* MessageRow.swift in Sources */,
 				30E15BD72B8DBC7000E4148E /* Message.swift in Sources */,
-				306292B52B843C7F0048271C /* ContentView.swift in Sources */,
+				306292B52B843C7F0048271C /* MessageList.swift in Sources */,
 				306292B32B843C7F0048271C /* wangyiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

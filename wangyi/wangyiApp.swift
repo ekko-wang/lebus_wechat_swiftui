@@ -11,7 +11,7 @@ import SwiftUI
 struct wangyiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MessageList()
         }
     }
 }
