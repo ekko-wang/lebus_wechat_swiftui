@@ -22,42 +22,42 @@ struct MessageList: View {
         return messages
     }()
     var body: some View {
-        NavigationView{
-            List(messages){ message in
-                NavigationLink {
-                    MessageDetail(title: message.nickName)
-                } label: {
-                    MessageRow(message: message)
-                }
-            }
-            .listStyle(.plain)
-            .navigationTitle("wechat")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar{
-                // 多个toolbar元素
-                ToolbarItem(placement: .topBarLeading) {
-                    Button() {
-                        print(123)
+            NavigationView{
+                List(messages){ message in
+                    NavigationLink {
+                        MessageDetail(title: message.nickName)
                     } label: {
-                        Image(systemName: "plus.circle").foregroundColor(.primary)
-                    }.padding(10) // padding也可以触发点击事件，以便于用户点击
+                        MessageRow(message: message)
+                    }
                 }
-                
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button() {
-                        print(123)
-                    } label: {
-                        Image(systemName: "plus.circle").foregroundColor(.primary)
-                    }.padding(10) // padding也可以触发点击事件，以便于用户点击
-                }
-                
+                .listStyle(.plain)
+                .navigationTitle("wechat")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar{
+                    // 多个toolbar元素
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button() {
+                            print(123)
+                        } label: {
+                            Image(systemName: "plus.circle").foregroundColor(.primary)
+                        }.padding(10) // padding也可以触发点击事件，以便于用户点击
+                    }
+                    
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button() {
+                            print(123)
+                        } label: {
+                            Image(systemName: "plus.circle").foregroundColor(.primary)
+                        }.padding(10) // padding也可以触发点击事件，以便于用户点击
+                    }
+                    
 
+                }
             }
-        }
-        
+                .navigationViewStyle(.stack) // 强制进行堆叠，打开后在ipad上就不会自动变成分屏了
+                .tabItem {
+                    Image(systemName: "message.fill")
+                    Text("wechat")
+                }
     }
-}
-
-#Preview {
-    MessageList()
 }
